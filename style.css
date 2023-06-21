@@ -1,0 +1,119 @@
+body{
+  margin: 0;
+  
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(180deg, rgba(227,255,248,0) 82.08%, rgba(227,255,248,0.38) 100%);
+
+  min-height: 100vh; /* toda área visível do navegador // mínimo da margem */
+
+}
+.page {
+ width: 1000px;
+ margin: 0 auto;
+ padding-top: 65px;
+
+}
+
+nav {
+  display:flex; /*deixa elemento ao lado do outro, dentro da caixa*/
+  justify-content: space-between; /* espaço entre*/
+  align-items: center;
+  margin-bottom: 55px;
+
+  font-family: 'Mulish', sans-serif;
+
+}
+
+ul{
+   display: flex;
+   list-style: none; /* sem estilo de lista */
+   gap:48px ;/* espaço entre as linhas, quando for flex */
+   margin: 0; /* margem*/
+   padding: 0; /*preenchimento*/
+
+   font-family: 'Mulish', sans-serif;
+   
+}
+ul li a {
+  opacity: 1;
+  font-weight: bold;
+
+}
+
+ul li a {
+   text-decoration: none; /* Retira as linhas */ 
+   color:#1F1534;
+}
+
+ul li a:hover {  /* Quando passar o mouse altera letra.*/
+  font-weight:bold ;
+}
+
+h1 {
+  font-family: 'Mulish', sans-serif;
+  color: #1F1534;
+  font-size: 49px ; 
+  line-height:56px ;
+  font-weight: normal;
+  
+}
+
+main {
+  display: flex;
+  justify-content: space-between; /* bloco ao lado do outro, quando display flex.*/
+  align-items: center;
+}
+
+h1 span{
+  color:#89C5CC;
+  font-weight: bold;
+  
+}
+section p {
+  font-size:14px; 
+  font-weight: 400;
+  line-height: 28px;
+  color:#7D7987;
+  margin: 40px 0 ;
+}
+
+button {
+  color: white;
+  text-transform:uppercase; /* Transforma o texto em maiúsculo*/
+  font-family: 'Open Sans', sans-serif;
+
+
+  /*box model*/ 
+  background: #69B99D; /* Background é cor de fundo na caixa*/
+  border:0;
+  padding: 14px 32px 15px;
+  /*propriedades juntas */
+  display:flex; /* alinhando elemento ao lado da outra*/
+  align-items: center; 
+  justify-content: center;
+  gap:10px;
+
+  border-radius: 4px;
+  cursor: pointer; /* aparece uma mãozinha ao colocar o mouse em cima do nome*/
+
+}
+
+button:hover{  /* para mudar de cor ao colocar mouse em cima!! */
+  background: #056443;
+}
+
+footer {
+  font-size: 14px; /* tamanho da fonte */
+  line-height: 28px;
+  align-items: center;
+  color:#1F1534;
+
+  text-align: center; /* centraliza o texto */ 
+  margin-top: 80px;
+}
+
+#balls {
+ position: fixed;
+ bottom: 0;
+ right: 0;
+}
